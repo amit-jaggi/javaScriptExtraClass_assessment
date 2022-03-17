@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> title </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="intro">
+        <h2>JavaScript - Day 16/3</h2>
+        <div class="qa-1">
+            <span class="question">What is JavaScript?</span>
+            <span class="answer">JavaScript is a dynamic programming language that is used for creating dynamic pages, in web & mobile applications, for game development and to make the web page interactive for the user. It is used for client-side scripting to perform some functionality behind the browser and allows to implement dynamic features on web pages that cannot be achieved with only HTML and CSS.</span>
+        </div>
+        <div class="qa-2">
+            <span class="question">What is JavaScript Runtime Environment?</span>
+            <span class="answer">It is an environment which makes the JavaScript code go through various stages of execute and to function properly in a browser. It is basically a collection of JS engine, Web API's, event loops, callback queues, micro task queues etc.
+            <img src="./images/JRE.jpg" alt="jre" class="diagram">
+            </span>
+            
+        </div>
+        <div class="qa-3">
+            <span class="question">What is JavaScript Engine?</span>
+            <span class="answer">JavaScript engine was created by the JavaScript founder named as Brenden Eich. It is software component that executes JavaScript code. Different browsers have different JavaScript Engines, for example. Google Chrome has V8 Engine, Internet explorer have Chakra and Mozilla have Spider Monkey. Taking V8 Engine as an example:
+                <ul>
+                    <li><span class="text-bold">Parser:</span>A lexical analysis (checks for syntax and semantics) that results into the breaking of code into tokens in order to understand their meanings and these tokens gets converted into Abstract Syntax Tree(AST).</li>
+                    <li><span class="text-bold">Abstract Syntax Tree (AST):</span>It is a hierarchical tree like structure of program representation which allows interpreter to understand the program. This AST is initially goes to the Interpreter.</li>
+                    <li><span class="text-bold">Interpreter:</span>It lets the AST to get converted into Byte code. In V8 engine, this process is known as Ignition but when some code gets repeated again and again</li>
+                    <li><span class="text-bold">Compiler:</span>It job is to spit out the most optimized byte code. In V8 Engine, This compiler is called as TurboFan. This process gets repeated again and again which means that JavaScript Engine's speed gets improved since profiler and compiler will be producing and updating the optimized byte code.</li>
+                </ul>
+                <img src="./images/JS Engine.jpg" alt="js engine" class="diagram">
+            </span>
+        </div>
+        <div class="qa-4">
+            <span class="question">What is Execution in JavaScript?</span>
+            <span class="answer">JavaScript Execution Context is divided into two phases:
+                <ul>
+                    <li><span class="text-bold">Creation Phase:</span>It is the initial phase of Global Execution Content (GEC). In this stage the JavaScript engine goes through the code and allocates memory in heap and placing undefined to its value of the variable and all the functions defined will be the function itself. The GEC is pushed into the callstack and it remains there until all the code get's executed. After complete execution the GEC gets popped from callstack.</li>
+                    <li><span class="text-bold">Execution Phase:</span>This is the final phase of GEC. Execution phase is the stage in which the code will be executed line by line which means all the variables are assigned with their actual values and to the function. When function gets executed a seperate execution context gets executed ie. function execution which is pushed into the stack ie. at the top of the global execution context.Here the code inside the function gets excuted. After the execution of the function the function execution context gets popped out of the callstack and the rest of the code gets excuted.</li>
+                </ul>
+                <img src="https://miro.medium.com/max/1400/1*bDebsOuhRx9NMyvLHY2zxA.gif" alt="global execution context" class="diagram">
+            </span>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

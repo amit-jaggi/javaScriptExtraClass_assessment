@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Ubuntu:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #f0ece3, #f5e4dd, #f6dddf, #eed8e8, #d9d7f1);
+}
+
+.intro h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: underline;
+    margin: 1.5% 5%;
+}
+
+.intro .qa-1, .qa-2, .qa-3, .qa-4 {
+    font-family: 'Poppins', sans-serif;
+    margin: 1% 0;
+}
+
+.intro .question, .answer {
+    display: block;
+    margin: 0 3%;
+    padding: .5% 0;
+}
+
+.intro .question {
+    font-weight: bold;
+}
+
+.intro .answer .text-bold {
+    font-weight: bold;
+}
+
+.intro .answer .text-bold:after {
+    content: ' ';
+}
+
+.intro .answer ul {
+    padding: .5% 2%;
+}
+
+.intro .answer ul li {
+    padding: .5% 0;
+}
+
+.intro .answer .diagram {
+    display: block;
+    margin: .5% auto;
+    height: 350px; 
+}
