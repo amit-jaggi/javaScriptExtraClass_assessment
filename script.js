@@ -1,1 +1,2 @@
-document.title = "JavaScript Assignment";
+document.title = "JavaScript Assignments";
+

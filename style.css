@@ -11,6 +11,9 @@ body {
     background-image: linear-gradient(to right bottom, #f0ece3, #f5e4dd, #f6dddf, #eed8e8, #d9d7f1);
 }
 
+
+/* ************ SECTION DAY_1 ************ */
+
 .intro h2 {
     font-family: 'Ubuntu', sans-serif;
     text-decoration: underline;
@@ -52,4 +55,41 @@ body {
     display: block;
     margin: .5% auto;
     height: 350px; 
+}
+
+/* ************ SECTION DAY_2 ************ */
+
+.day-2 h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: underline;
+    margin: 1.5% 5%;
+}
+
+.day-2 .qa-1, .qa-2, .qa-3, .qa-4 {
+    font-family: 'Poppins', sans-serif;
+    margin: 1% 0;
+}
+
+.day-2 .question, .answer {
+    display: block;
+    margin: 0 3%;
+    padding: .5% 0;
+}
+.day-2 .question {
+    font-weight: bold;
+}
+
+.day-2 .qa-1 .answer ul {
+    list-style-type: decimal;
+    margin: 1% 1%;
+}
+
+.day-2 .qa-1 .answer ul li ul {
+    margin: 1% 2%; 
+    list-style-type: square;
+}
+.day-2 .diagram {
+    display: block;
+    margin: .5% auto;
+    height: 220px; 
 }

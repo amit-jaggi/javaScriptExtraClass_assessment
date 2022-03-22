@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="intro">
-        <h2>JavaScript - Day 16/3</h2>
+        <h2>JavaScript - Day 16, March</h2>
         <div class="qa-1">
             <span class="question">What is JavaScript?</span>
             <span class="answer">JavaScript is a dynamic programming language that is used for creating dynamic pages, in web & mobile applications, for game development and to make the web page interactive for the user. It is used for client-side scripting to perform some functionality behind the browser and allows to implement dynamic features on web pages that cannot be achieved with only HTML and CSS.</span>
@@ -42,6 +42,51 @@
                 </ul>
                 <img src="https://miro.medium.com/max/1400/1*bDebsOuhRx9NMyvLHY2zxA.gif" alt="global execution context" class="diagram">
             </span>
+        </div>
+    </section>
+    
+    <section class="day-2">
+        <h2>JavaScript - Day 17, March</h2>
+        <div class="qa-1">
+            <span class="question">What are the different data-type to define a variables in JavaScript? </span>
+            <span class="answer">There are three data-type ot define a variable;
+                <ul>
+                    <li>var
+                        <ul>
+                            <li>The variables with var data-type are global scope variables.</li>
+                            <li>This var data-type variable can re-declared again and can also be re-assigned with new value.</li>
+                        </ul>
+                    </li>
+                    <li>let
+                        <ul>
+                            <li>The variables with let data-type are block scope variables.</li>
+                            <li>This let data-type variables can be re-assigned with new value but cannot be re-declared again.</li>
+                        </ul>
+                    </li>
+                    <li>const
+                        <ul>
+                            <li>The variables with const data-type are block scope variables.</li>
+                            <li>This let data-type variables cannot be re-assigned with new value neither can be re-declared again.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+        </div>
+
+        <div class="qa-2">
+            <span class="question">What is Hoisting in JavaScript?</span>
+            <span class="answer">Hoisting is phenomenon in JavaScript by which we can able to access the variables & functions before they are declared and without any error. For example, if a variable is declared & initialized with a value and we try to access it before they are defined which will return undefined and if we try to access it after they are declared which will return the actual value that is been assigned.</span>
+            <img src="./images/Hoisting.JPG
+            " alt="hoisting" class="diagram">
+        </div>
+        <div class="qa-3">
+            <span class="question">What is Temporal Dead Zone?</span>
+            <span class="answer">The let and const variables are not accessible before they are initialized with some value, and the phase between the starting of the execution of block in which the let or const variable is declared till that variable is being initialized is called Temporal Dead Zone for the variable.</span>
+        </div>
+        <div class="qa-4">
+            <span class="question">What are closures?</span>
+            <span class="answer">A function along with its lexical environment forms a closure. It gives access to variables or other properties of outer function or parent to it's inner or child function by creating a lexical environment.</span>
+            <img src="./images/Closures.JPG" alt="closures" class="diagram">
         </div>
     </section>
     <script src="./script.js"></script>
