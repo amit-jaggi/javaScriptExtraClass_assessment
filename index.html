@@ -72,7 +72,6 @@
                 </ul>
             </span>
         </div>
-
         <div class="qa-2">
             <span class="question">What is Hoisting in JavaScript?</span>
             <span class="answer">Hoisting is phenomenon in JavaScript by which we can able to access the variables & functions before they are declared and without any error. For example, if a variable is declared & initialized with a value and we try to access it before they are defined which will return undefined and if we try to access it after they are declared which will return the actual value that is been assigned.</span>
@@ -88,6 +87,232 @@
             <span class="answer">A function along with its lexical environment forms a closure. It gives access to variables or other properties of outer function or parent to it's inner or child function by creating a lexical environment.</span>
             <img src="./images/Closures.JPG" alt="closures" class="diagram">
         </div>
+    </section>
+
+    <section class="operators">
+        <h2>JavaScript - Day 21, March </h2>
+            <div class="operator">
+                <span class="operator-heading">1. Arithmetic Operator</span>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Meaning</th>
+                        <th>Example</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>+</td>
+                        <td>Addition</td>
+                        <td>4 + 5</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Subtraction</td>
+                        <td>10 - 5</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Multiplication</td>
+                        <td>4 * 5</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>Division</td>
+                        <td>4 / 2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>Modulus</td>
+                        <td>4 % 2</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </div> 
+            <div class="operator">
+                <span class="operator-heading">2. Comparison Operator</span>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Meaning</th>
+                        <th>Example</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>==</td>
+                        <td>Double equals-to</td>
+                        <td>5 == 5</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>===</td>
+                        <td>Strict equals-to</td>
+                        <td>5 === 5</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>Not equals-to</td>
+                        <td>5 != 5</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>Less than</td>
+                        <td>2 &lt; 5</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>Greater than</td>
+                        <td>2 &gt; 5</td>
+                        <td>false</td>
+                    </tr>
+                </table>
+            </div> 
+            <div class="operator">
+                <span class="operator-heading">3. Logical Operator</span>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Meaning</th>
+                        <th>Example</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>&&</td>
+                        <td>Logical AND</td>
+                        <td>10 &gt; 5 && 10 &lt; 5</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>&verbar;&verbar;</td>
+                        <td>Logical OR</td>
+                        <td>10 &gt; 5 && 10 &lt; 5</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>!</td>
+                        <td>Logical Not</td>
+                        <td>!false</td>
+                        <td>true</td>
+                    </tr>
+                </table>
+            </div> 
+            <div class="operator">
+                <span class="operator-heading">4. Assignment Operator</span>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Meaning</th>
+                        <th>Example (n = 5)</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>=</td>
+                        <td>Equals-to</td>
+                        <td>n &Rightarrow;</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>Addition equals-to</td>
+                        <td>n += 1</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>Subtraction equals-to</td>
+                        <td>n -= 1</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>Multiplication equals-to</td>
+                        <td>n *= 2</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>Division equal-to</td>
+                        <td>n /= 2</td>
+                        <td>2.5</td>
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>Modulus equals-to</td>
+                        <td>n %= 2</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div> 
+            <div class="operator">
+                <span class="operator-heading">5. Ternary Operator</span>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Meaning</th>
+                        <th>Example</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>? , :</td>
+                        <td>condition ? expression1 : expresion2</td>
+                        <td>(n % 2 == 0) ? true : false</td>
+                        <td>false</td>
+                    </tr>
+                </table>
+            </div> 
+            <div class="operator">
+                <span class="operator-heading">6. Bitwise Operator</span>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Meaning</th>
+                        <th>Example</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>&</td>
+                        <td>Bitwise AND</td>
+                        <td>5 & 1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>&vert;</td>
+                        <td>Bitwise OR</td>
+                        <td>5 &vert; 1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>^</td>
+                        <td>Bitwise XOR</td>
+                        <td>5 ^ 1</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>~</td>
+                        <td>Bitwise NOT</td>
+                        <td>~ 5</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;&lt;</td>
+                        <td>Bitwise Left-Shift</td>
+                        <td>5 &lt;&lt; 1</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;&gt;</td>
+                        <td>Bitwise Right-Shift</td>
+                        <td>5 &gt;&gt; 1</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </div> 
     </section>
     <script src="./script.js"></script>
 </body>

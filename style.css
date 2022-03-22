@@ -93,3 +93,34 @@ body {
     margin: .5% auto;
     height: 220px; 
 }
+
+/* ************ SECTION DAY_3 ************ */
+
+.operators h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: underline;
+    margin: 1.5% 5%;
+}
+
+.operators .operator {
+    font-family: 'Poppins', sans-serif;
+    margin: 1% 5%;
+}
+
+.operators .operator .operator-heading {
+    display: block;
+    font-weight: bold;
+    margin: 1% 8%;
+}
+
+.operators .operator table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.operators .operator table th, td {
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+}
