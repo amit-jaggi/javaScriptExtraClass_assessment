@@ -124,3 +124,32 @@ body {
     padding: 10px 20px;
     text-align: center;
 }
+
+
+/* ************ SECTION DAY_4 ************ */
+
+.conditions h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: underline;
+    margin: 1.5% 5%;
+}
+
+.conditions .statement {
+    font-family: 'Poppins', sans-serif;
+    margin: 2% 5%;
+}
+
+
+.conditions .statement .condition-heading span {
+    font-weight: bold;
+}
+
+.conditions .statement .condition-heading span:after {
+    content: ': ';
+}
+
+.conditions .statement .coding {
+    font-family: 'Poppin';
+    margin: 2%;
+    font-size: 1.2em;
+}

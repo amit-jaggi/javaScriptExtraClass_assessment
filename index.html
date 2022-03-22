@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <section class="intro">
         <h2>JavaScript - Day 16, March</h2>
         <div class="qa-1">
             <span class="question">What is JavaScript?</span>
-            <span class="answer">JavaScript is a dynamic programming language that is used for creating dynamic pages, in web & mobile applications, for game development and to make the web page interactive for the user. It is used for client-side scripting to perform some functionality behind the browser and allows to implement dynamic features on web pages that cannot be achieved with only HTML and CSS.</span>
+            <span class="answer">JavaScript is a dynamic programming language that is used for creating dynamic pages,
+                in web & mobile applications, for game development and to make the web page interactive for the user. It
+                is used for client-side scripting to perform some functionality behind the browser and allows to
+                implement dynamic features on web pages that cannot be achieved with only HTML and CSS.</span>
         </div>
         <div class="qa-2">
             <span class="question">What is JavaScript Runtime Environment?</span>
-            <span class="answer">It is an environment which makes the JavaScript code go through various stages of execute and to function properly in a browser. It is basically a collection of JS engine, Web API's, event loops, callback queues, micro task queues etc.
-            <img src="./images/JRE.jpg" alt="jre" class="diagram">
+            <span class="answer">It is an environment which makes the JavaScript code go through various stages of
+                execute and to function properly in a browser. It is basically a collection of JS engine, Web API's,
+                event loops, callback queues, micro task queues etc.
+                <img src="./images/JRE.jpg" alt="jre" class="diagram">
             </span>
-            
+
         </div>
         <div class="qa-3">
             <span class="question">What is JavaScript Engine?</span>
-            <span class="answer">JavaScript engine was created by the JavaScript founder named as Brenden Eich. It is software component that executes JavaScript code. Different browsers have different JavaScript Engines, for example. Google Chrome has V8 Engine, Internet explorer have Chakra and Mozilla have Spider Monkey. Taking V8 Engine as an example:
+            <span class="answer">JavaScript engine was created by the JavaScript founder named as Brenden Eich. It is
+                software component that executes JavaScript code. Different browsers have different JavaScript Engines,
+                for example. Google Chrome has V8 Engine, Internet explorer have Chakra and Mozilla have Spider Monkey.
+                Taking V8 Engine as an example:
                 <ul>
-                    <li><span class="text-bold">Parser:</span>A lexical analysis (checks for syntax and semantics) that results into the breaking of code into tokens in order to understand their meanings and these tokens gets converted into Abstract Syntax Tree(AST).</li>
-                    <li><span class="text-bold">Abstract Syntax Tree (AST):</span>It is a hierarchical tree like structure of program representation which allows interpreter to understand the program. This AST is initially goes to the Interpreter.</li>
-                    <li><span class="text-bold">Interpreter:</span>It lets the AST to get converted into Byte code. In V8 engine, this process is known as Ignition but when some code gets repeated again and again</li>
-                    <li><span class="text-bold">Compiler:</span>It job is to spit out the most optimized byte code. In V8 Engine, This compiler is called as TurboFan. This process gets repeated again and again which means that JavaScript Engine's speed gets improved since profiler and compiler will be producing and updating the optimized byte code.</li>
+                    <li><span class="text-bold">Parser:</span>A lexical analysis (checks for syntax and semantics) that
+                        results into the breaking of code into tokens in order to understand their meanings and these
+                        tokens gets converted into Abstract Syntax Tree(AST).</li>
+                    <li><span class="text-bold">Abstract Syntax Tree (AST):</span>It is a hierarchical tree like
+                        structure of program representation which allows interpreter to understand the program. This AST
+                        is initially goes to the Interpreter.</li>
+                    <li><span class="text-bold">Interpreter:</span>It lets the AST to get converted into Byte code. In
+                        V8 engine, this process is known as Ignition but when some code gets repeated again and again
+                    </li>
+                    <li><span class="text-bold">Compiler:</span>It job is to spit out the most optimized byte code. In
+                        V8 Engine, This compiler is called as TurboFan. This process gets repeated again and again which
+                        means that JavaScript Engine's speed gets improved since profiler and compiler will be producing
+                        and updating the optimized byte code.</li>
                 </ul>
                 <img src="./images/JS Engine.jpg" alt="js engine" class="diagram">
             </span>
@@ -38,14 +57,25 @@
             <span class="question">What is Execution in JavaScript?</span>
             <span class="answer">JavaScript Execution Context is divided into two phases:
                 <ul>
-                    <li><span class="text-bold">Creation Phase:</span>It is the initial phase of Global Execution Content (GEC). In this stage the JavaScript engine goes through the code and allocates memory in heap and placing undefined to its value of the variable and all the functions defined will be the function itself. The GEC is pushed into the callstack and it remains there until all the code get's executed. After complete execution the GEC gets popped from callstack.</li>
-                    <li><span class="text-bold">Execution Phase:</span>This is the final phase of GEC. Execution phase is the stage in which the code will be executed line by line which means all the variables are assigned with their actual values and to the function. When function gets executed a seperate execution context gets executed ie. function execution which is pushed into the stack ie. at the top of the global execution context.Here the code inside the function gets excuted. After the execution of the function the function execution context gets popped out of the callstack and the rest of the code gets excuted.</li>
+                    <li><span class="text-bold">Creation Phase:</span>It is the initial phase of Global Execution
+                        Content (GEC). In this stage the JavaScript engine goes through the code and allocates memory in
+                        heap and placing undefined to its value of the variable and all the functions defined will be
+                        the function itself. The GEC is pushed into the callstack and it remains there until all the
+                        code get's executed. After complete execution the GEC gets popped from callstack.</li>
+                    <li><span class="text-bold">Execution Phase:</span>This is the final phase of GEC. Execution phase
+                        is the stage in which the code will be executed line by line which means all the variables are
+                        assigned with their actual values and to the function. When function gets executed a seperate
+                        execution context gets executed ie. function execution which is pushed into the stack ie. at the
+                        top of the global execution context.Here the code inside the function gets excuted. After the
+                        execution of the function the function execution context gets popped out of the callstack and
+                        the rest of the code gets excuted.</li>
                 </ul>
-                <img src="https://miro.medium.com/max/1400/1*bDebsOuhRx9NMyvLHY2zxA.gif" alt="global execution context" class="diagram">
+                <img src="https://miro.medium.com/max/1400/1*bDebsOuhRx9NMyvLHY2zxA.gif" alt="global execution context"
+                    class="diagram">
             </span>
         </div>
     </section>
-    
+
     <section class="day-2">
         <h2>JavaScript - Day 17, March</h2>
         <div class="qa-1">
@@ -55,19 +85,22 @@
                     <li>var
                         <ul>
                             <li>The variables with var data-type are global scope variables.</li>
-                            <li>This var data-type variable can re-declared again and can also be re-assigned with new value.</li>
+                            <li>This var data-type variable can re-declared again and can also be re-assigned with new
+                                value.</li>
                         </ul>
                     </li>
                     <li>let
                         <ul>
                             <li>The variables with let data-type are block scope variables.</li>
-                            <li>This let data-type variables can be re-assigned with new value but cannot be re-declared again.</li>
+                            <li>This let data-type variables can be re-assigned with new value but cannot be re-declared
+                                again.</li>
                         </ul>
                     </li>
                     <li>const
                         <ul>
                             <li>The variables with const data-type are block scope variables.</li>
-                            <li>This let data-type variables cannot be re-assigned with new value neither can be re-declared again.</li>
+                            <li>This let data-type variables cannot be re-assigned with new value neither can be
+                                re-declared again.</li>
                         </ul>
                     </li>
                 </ul>
@@ -75,247 +108,309 @@
         </div>
         <div class="qa-2">
             <span class="question">What is Hoisting in JavaScript?</span>
-            <span class="answer">Hoisting is phenomenon in JavaScript by which we can able to access the variables & functions before they are declared and without any error. For example, if a variable is declared & initialized with a value and we try to access it before they are defined which will return undefined and if we try to access it after they are declared which will return the actual value that is been assigned.</span>
+            <span class="answer">Hoisting is phenomenon in JavaScript by which we can able to access the variables &
+                functions before they are declared and without any error. For example, if a variable is declared &
+                initialized with a value and we try to access it before they are defined which will return undefined and
+                if we try to access it after they are declared which will return the actual value that is been
+                assigned.</span>
             <img src="./images/Hoisting.JPG
             " alt="hoisting" class="diagram">
         </div>
         <div class="qa-3">
             <span class="question">What is Temporal Dead Zone?</span>
-            <span class="answer">The let and const variables are not accessible before they are initialized with some value, and the phase between the starting of the execution of block in which the let or const variable is declared till that variable is being initialized is called Temporal Dead Zone for the variable.</span>
+            <span class="answer">The let and const variables are not accessible before they are initialized with some
+                value, and the phase between the starting of the execution of block in which the let or const variable
+                is declared till that variable is being initialized is called Temporal Dead Zone for the
+                variable.</span>
         </div>
         <div class="qa-4">
             <span class="question">What are closures?</span>
-            <span class="answer">A function along with its lexical environment forms a closure. It gives access to variables or other properties of outer function or parent to it's inner or child function by creating a lexical environment.</span>
+            <span class="answer">A function along with its lexical environment forms a closure. It gives access to
+                variables or other properties of outer function or parent to it's inner or child function by creating a
+                lexical environment.</span>
             <img src="./images/Closures.JPG" alt="closures" class="diagram">
         </div>
     </section>
 
     <section class="operators">
-        <h2>JavaScript - Day 21, March </h2>
-            <div class="operator">
-                <span class="operator-heading">1. Arithmetic Operator</span>
-                <table>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Meaning</th>
-                        <th>Example</th>
-                        <th>Output</th>
-                    </tr>
-                    <tr>
-                        <td>+</td>
-                        <td>Addition</td>
-                        <td>4 + 5</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>-</td>
-                        <td>Subtraction</td>
-                        <td>10 - 5</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>*</td>
-                        <td>Multiplication</td>
-                        <td>4 * 5</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>/</td>
-                        <td>Division</td>
-                        <td>4 / 2</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>%</td>
-                        <td>Modulus</td>
-                        <td>4 % 2</td>
-                        <td>0</td>
-                    </tr>
-                </table>
-            </div> 
-            <div class="operator">
-                <span class="operator-heading">2. Comparison Operator</span>
-                <table>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Meaning</th>
-                        <th>Example</th>
-                        <th>Output</th>
-                    </tr>
-                    <tr>
-                        <td>==</td>
-                        <td>Double equals-to</td>
-                        <td>5 == 5</td>
-                        <td>true</td>
-                    </tr>
-                    <tr>
-                        <td>===</td>
-                        <td>Strict equals-to</td>
-                        <td>5 === 5</td>
-                        <td>true</td>
-                    </tr>
-                    <tr>
-                        <td>!=</td>
-                        <td>Not equals-to</td>
-                        <td>5 != 5</td>
-                        <td>false</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;</td>
-                        <td>Less than</td>
-                        <td>2 &lt; 5</td>
-                        <td>true</td>
-                    </tr>
-                    <tr>
-                        <td>&gt;</td>
-                        <td>Greater than</td>
-                        <td>2 &gt; 5</td>
-                        <td>false</td>
-                    </tr>
-                </table>
-            </div> 
-            <div class="operator">
-                <span class="operator-heading">3. Logical Operator</span>
-                <table>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Meaning</th>
-                        <th>Example</th>
-                        <th>Output</th>
-                    </tr>
-                    <tr>
-                        <td>&&</td>
-                        <td>Logical AND</td>
-                        <td>10 &gt; 5 && 10 &lt; 5</td>
-                        <td>false</td>
-                    </tr>
-                    <tr>
-                        <td>&verbar;&verbar;</td>
-                        <td>Logical OR</td>
-                        <td>10 &gt; 5 && 10 &lt; 5</td>
-                        <td>false</td>
-                    </tr>
-                    <tr>
-                        <td>!</td>
-                        <td>Logical Not</td>
-                        <td>!false</td>
-                        <td>true</td>
-                    </tr>
-                </table>
-            </div> 
-            <div class="operator">
-                <span class="operator-heading">4. Assignment Operator</span>
-                <table>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Meaning</th>
-                        <th>Example (n = 5)</th>
-                        <th>Output</th>
-                    </tr>
-                    <tr>
-                        <td>=</td>
-                        <td>Equals-to</td>
-                        <td>n &Rightarrow;</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>+=</td>
-                        <td>Addition equals-to</td>
-                        <td>n += 1</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>-=</td>
-                        <td>Subtraction equals-to</td>
-                        <td>n -= 1</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>*=</td>
-                        <td>Multiplication equals-to</td>
-                        <td>n *= 2</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>/=</td>
-                        <td>Division equal-to</td>
-                        <td>n /= 2</td>
-                        <td>2.5</td>
-                    </tr>
-                    <tr>
-                        <td>%=</td>
-                        <td>Modulus equals-to</td>
-                        <td>n %= 2</td>
-                        <td>1</td>
-                    </tr>
-                </table>
-            </div> 
-            <div class="operator">
-                <span class="operator-heading">5. Ternary Operator</span>
-                <table>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Meaning</th>
-                        <th>Example</th>
-                        <th>Output</th>
-                    </tr>
-                    <tr>
-                        <td>? , :</td>
-                        <td>condition ? expression1 : expresion2</td>
-                        <td>(n % 2 == 0) ? true : false</td>
-                        <td>false</td>
-                    </tr>
-                </table>
-            </div> 
-            <div class="operator">
-                <span class="operator-heading">6. Bitwise Operator</span>
-                <table>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Meaning</th>
-                        <th>Example</th>
-                        <th>Output</th>
-                    </tr>
-                    <tr>
-                        <td>&</td>
-                        <td>Bitwise AND</td>
-                        <td>5 & 1</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>&vert;</td>
-                        <td>Bitwise OR</td>
-                        <td>5 &vert; 1</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>^</td>
-                        <td>Bitwise XOR</td>
-                        <td>5 ^ 1</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>~</td>
-                        <td>Bitwise NOT</td>
-                        <td>~ 5</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;&lt;</td>
-                        <td>Bitwise Left-Shift</td>
-                        <td>5 &lt;&lt; 1</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>&gt;&gt;</td>
-                        <td>Bitwise Right-Shift</td>
-                        <td>5 &gt;&gt; 1</td>
-                        <td>2</td>
-                    </tr>
-                </table>
-            </div> 
+        <h2>JavaScript - Day 21, March</h2>
+        <div class="operator">
+            <span class="operator-heading">1. Arithmetic Operator</span>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Addition</td>
+                    <td>4 + 5</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Subtraction</td>
+                    <td>10 - 5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplication</td>
+                    <td>4 * 5</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Division</td>
+                    <td>4 / 2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Modulus</td>
+                    <td>4 % 2</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <div class="operator">
+            <span class="operator-heading">2. Comparison Operator</span>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>Double equals-to</td>
+                    <td>5 == 5</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>===</td>
+                    <td>Strict equals-to</td>
+                    <td>5 === 5</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Not equals-to</td>
+                    <td>5 != 5</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td>Less than</td>
+                    <td>2 &lt; 5</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>Greater than</td>
+                    <td>2 &gt; 5</td>
+                    <td>false</td>
+                </tr>
+            </table>
+        </div>
+        <div class="operator">
+            <span class="operator-heading">3. Logical Operator</span>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>&&</td>
+                    <td>Logical AND</td>
+                    <td>10 &gt; 5 && 10 &lt; 5</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>&verbar;&verbar;</td>
+                    <td>Logical OR</td>
+                    <td>10 &gt; 5 && 10 &lt; 5</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Logical Not</td>
+                    <td>!false</td>
+                    <td>true</td>
+                </tr>
+            </table>
+        </div>
+        <div class="operator">
+            <span class="operator-heading">4. Assignment Operator</span>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Meaning</th>
+                    <th>Example (n = 5)</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>Equals-to</td>
+                    <td>n &Rightarrow;</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>Addition equals-to</td>
+                    <td>n += 1</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>Subtraction equals-to</td>
+                    <td>n -= 1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>Multiplication equals-to</td>
+                    <td>n *= 2</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>Division equal-to</td>
+                    <td>n /= 2</td>
+                    <td>2.5</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>Modulus equals-to</td>
+                    <td>n %= 2</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+        <div class="operator">
+            <span class="operator-heading">5. Ternary Operator</span>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>? , :</td>
+                    <td>condition ? expression1 : expresion2</td>
+                    <td>(n % 2 == 0) ? true : false</td>
+                    <td>false</td>
+                </tr>
+            </table>
+        </div>
+        <div class="operator">
+            <span class="operator-heading">6. Bitwise Operator</span>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>&</td>
+                    <td>Bitwise AND</td>
+                    <td>5 & 1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>&vert;</td>
+                    <td>Bitwise OR</td>
+                    <td>5 &vert; 1</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>^</td>
+                    <td>Bitwise XOR</td>
+                    <td>5 ^ 1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>~</td>
+                    <td>Bitwise NOT</td>
+                    <td>~ 5</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>&lt;&lt;</td>
+                    <td>Bitwise Left-Shift</td>
+                    <td>5 &lt;&lt; 1</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>&gt;&gt;</td>
+                    <td>Bitwise Right-Shift</td>
+                    <td>5 &gt;&gt; 1</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="conditions">
+        <h2>JavaScript - Day 22, March</h2>
+        <div class="statement">
+            <span class="condition-heading"><span>If-else</span>If the condition is true then it will execute the true
+                block of code. And if the condition is false then it will execute the false block of code.</span>
+            <pre class="coding">
+                if ('cat' === 'dog') {
+                    console.log(`if block`);
+                } else {
+                    console.log(`else block`);
+                }
+            </pre>
+        </div>
+        <div class="statement">
+            <span class="condition-heading"><span>Else-if</span>If the first condition is false then it will check for
+                the second condition of else-if and then that block will be executed.</span>
+            <pre class="coding">
+                if (false) {
+                    console.log(`if block`);
+                } else if (true) {
+                    console.log(`else-if block`);
+                } else {
+                    console.log(`else block`);
+                }
+            </pre>
+        </div>
+        <div class="statement">
+            <span class="condition-heading"><span>Switch</span>This is used to perform different actions based on
+                different conditions.</span>
+            <pre class="coding">
+                const grade = 87;
+
+                switch (true) {
+                    case grade >= 90:
+                        console.log("A");
+                        break;
+                    case grade >= 80:
+                        console.log("B");
+                        break;
+                    case grade >= 70:
+                        console.log("C");
+                        break;
+                    case grade >= 60:
+                        console.log("D");
+                        break;
+                    default:
+                        console.log("F");
+                }
+            </pre>
+        </div>
     </section>
 
     <script src="./script.js"></script>
 </body>
+
 </html>
